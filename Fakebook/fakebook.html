@@ -4,45 +4,53 @@
         <meta charset="UTF-8">
         <meta name="keywords" content="Fakebook, Christopher, Hanke, Informationen">
         <meta name="description" content="Fakebook Seite von Christopher Hanke">
+        <link rel="stylesheet" href="style.css">
 
         <title>Christopher Hanke | Fakebook</title>
     </head>
 
-    <body style="background-color:white">
-        <h1 style="font-style:italic">Fakebook</h1>
-        <form>
-            <label>Suche:</label>
-            <input type="text" placeholder="Wen suchst du?">
-        </form>
-
-
-        <h2>Christopher Hanke</h2>
-        <img src="chris_hiking.jpg" alt="Selfie von Christopher beim Wandern" width="400">
-
-        <h3 style="text-decoration:underline">Infos</h3>
-        <table>
-            <tr>
-                <td><strong>Stadt:</strong></td>
-                <td>Bergisch Gladbach</td>
-            </tr>
-            <tr>
-                <td><strong>Alter:</strong></td>
-                <td>32</td>
-            </tr>
-            <tr>
-                <td style="vertical-align:top"><strong>Hobbies:</strong></td>
-                <td><ul>
-                    <li>Wandern</li>
-                    <li>Lesen</li>
-                    <li>Gaming</li>
-                </ul></td>
-            </tr>
-            <tr>
-                <td><strong>Freunde</strong></td>
-                <td>9.000+</td>
-            </tr>
-        </table>
-        <button>Freund hinzufügen</button>
-        
+    <body>
+        <nav class="navigation">
+            <img src="https://www.smartninja.de/assets/img/logo.png" alt="logo" class="logo">
+            <ul class="navi-list">
+                <li class="il"><strong class="italic">Fakebook</strong></li>
+                <li class="il"><a href="">Startseite</a></li>
+                <li class="il"><a href="">Profil</a></li>
+            <li class="il"><label>Suche:</label>
+                <input type="text" placeholder="Wen suchst du?"></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="box">
+                <h2 class="blue">Christopher Hanke</h2>
+                <img src="chris_hiking.jpg" alt="Selfie von Christopher beim Wandern" width="400">
+            </div>
+            <div class="box">
+                <h3 class="underline">Infos</h3>
+                <table>
+                    <tr>
+                        <td><strong>Stadt:</strong></td>
+                        <td>Bergisch Gladbach</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alter:</strong></td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top"><strong>Hobbies:</strong></td>
+                        <td><ul class="list">
+                            <li>Wandern</li>
+                            <li>Lesen</li>
+                            <li>Gaming</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Freunde</strong></td>
+                        <td>9.000+</td>
+                    </tr>
+                </table>
+            </div>
+            <button>Freund hinzufügen</button>
+        </div>
     </body>
 </html>
