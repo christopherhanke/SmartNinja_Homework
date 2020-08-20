@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: helvetica;
+}
+
+.navigation {
+    background-color: blue;
+    height: 60px;
+    min-width: 768px;
+    max-width: 100%;
+    color: white;
+}
+
+.navi-list {
+    margin: 19px;
+    padding: 0px;
+    float: left;
+    list-style-type: none;
+}
+
+.il {
+    display: inline;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    height: 40px;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    padding: 10px;
+}
+
+.content {
+    margin: 10px;
+}
+
+.blue {
+    color: blue;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+table {
+
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.list {
+    margin: 0px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.box {
+    margin: 5px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: blue;
+    width: 400px;
+}
+button {
+    margin: 5px;
+
+}
