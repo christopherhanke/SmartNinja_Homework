@@ -31,16 +31,32 @@ body {
     border-radius: 50%;
 }
 
+a {
+    color: white;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: blue;
+    background: white;
+}
+
+#fakebook {
+    padding: 5px;
+}
+
+#fakebook:hover {
+    color: blue;
+    background: white;
+}
+
 /* all styles for the content */
 .italic {
     font-style: italic;
     font-size: 20px;
 }
 
-a {
-    color: white;
-    padding: 10px;
-}
+
 
 .content {
     margin: 10px;
