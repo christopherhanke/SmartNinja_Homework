@@ -6,6 +6,19 @@ body {
     margin: 0;
 }
 
+body a:link {
+    color: silver;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+body a:visited {
+    color: silver;
+}
+
 /* sites design using flexbox for responsive design */
 
 /* navigation bar style */
@@ -48,6 +61,19 @@ body {
     justify-content: center;
 }
 
+.container-column {
+    display: flex;
+    padding: 1% 45px;
+    flex-direction: column;
+}
+
+.container-space {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50%;
+}
+
+
 .logo {
     margin-top: 5%;
 }
@@ -57,8 +83,11 @@ body {
 }
 
 input {
-    width: 200px;
+    width: 300px;
     font-family: 'Roboto';
+    border: 1px solid gainsboro;
+    height: 25px;
+    border-radius: 5%;
 }
 
 .buttons {
@@ -76,11 +105,70 @@ input {
     display: inline;
 }
 
-.bottom {
+#bottom {
     position: fixed;
     bottom: 0;
-    height: 35px;
+    height: auto;
     width: 100%;
     background: whitesmoke;
     border-top: 1px solid gainsboro;
+}
+
+.bbar {
+    height: auto;
+    border-bottom: 1px solid gainsboro;
+    padding: 5px;
+}
+
+.bbar span {
+    color: silver;
+    margin: 5px;
+}
+
+.bleft {
+    float: left;
+    margin-left: 5px;
+}
+
+.bleft a {
+    display: inline-block;
+    padding: 5px;
+}
+
+.bright {
+    float: right;
+    margin-right: 5px;
+}
+
+.bright a {
+    display: inline-block;
+    padding: 5px;
+}
+
+#login {
+    height:500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20%;
+    border: 1px solid gainsboro;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+#login h1 {
+    margin: 2%;
+}
+
+#login a {
+    color: blue;
+    font-weight: bold;
+}
+
+#login a:visited {
+    color: blue;
+    font-weight: bold;
+}
+
+#login div {
+    margin: 5px;
 }
