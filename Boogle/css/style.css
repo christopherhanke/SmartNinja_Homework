@@ -1,12 +1,17 @@
 /* setting standards in body */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
 
+@media(min-width: 768px) {
+    /* mit media-query Verhalten von nicht mobiler Seite definieren */
+}
+
+
 body {
     font-family: 'Roboto';
     margin: 0;
 }
 
-body a:link {
+body a:link, body a:visited {
     color: silver;
     text-decoration: none;
 }
@@ -15,17 +20,13 @@ body a:hover {
     text-decoration: underline;
 }
 
-body a:visited {
-    color: silver;
-}
-
 /* sites design using flexbox for responsive design */
 
 /* navigation bar style */
 #navigation {
     display: flex;
     justify-content: space-between; /*setting the boxes apart */
-    margin: 8px;
+    margin: 10px;
     height: 50px;
     min-width: 360px;
 }
@@ -35,11 +36,7 @@ body a:visited {
     text-decoration: none;
 }
 
-#navigation div a:link {
-    color: silver;
-}
-
-#navigation div a:visited {
+#navigation div a:link, #navigation div a:visited {
     color: silver;
 }
 
@@ -56,6 +53,8 @@ body a:visited {
 
 
 /* sites content style */
+
+/* defining container that flex the sites appearence */
 .container {
     display: flex;
     justify-content: center;
@@ -63,53 +62,111 @@ body a:visited {
 
 .container-column {
     display: flex;
-    padding: 1% 45px;
+    padding: 1% 1%;
     flex-direction: column;
 }
 
 .container-space {
     display: flex;
     justify-content: space-between;
-    padding-top: 50%;
+    padding-top: 50px;
 }
 
 
+/* logo style */
 .logo {
     margin-top: 5%;
 }
 
+
+/* definig inputfields */
 .search {
     padding: 1% 0;
+}
+
+.fieldSearchbar {
+    width: auto;
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldSearchbar img {
+    height: 20px;
+    padding: 0 10px;
+}
+
+.fieldLogin {
+    width: auto;
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    display: flex;
+    justify-content; center;
+    align-items; center;
 }
 
 input {
     width: 300px;
     font-family: 'Roboto';
-    border: 1px solid gainsboro;
+    border: none;
     height: 25px;
     border-radius: 5%;
 }
 
+input:focus {
+    outline: none;
+}
+
+/* defining button appearence */
 .buttons {
     padding: 1% 0;
 }
 
+.buttons button {
+    width: auto;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin: 1px;
+    background-color: whitesmoke;
+    color: silver;
+}
+
+.buttons button:hover {
+    margin: 0px;
+    border: 1px solid silver;
+}
+
+.buttons button span {
+    padding: 0 5px;
+}
+
+
+/* language field on index page */
 .language {
     margin-top: 1%;
 }
 
 .language ul {
     list-style-type: none;
+    padding: 0;
 }
 .language ul li {
     display: inline;
 }
 
+
+/* footer or bottom style on index page */
 #bottom {
     position: fixed;
     bottom: 0;
     height: auto;
     width: 100%;
+    min-width: 360px;
     background: whitesmoke;
     border-top: 1px solid gainsboro;
 }
@@ -145,6 +202,10 @@ input {
     padding: 5px;
 }
 
+
+/* styles for login page */
+
+/* styling login container */
 #login {
     height:500px;
     width: 400px;
@@ -159,16 +220,50 @@ input {
     margin: 2%;
 }
 
-#login a {
-    color: blue;
-    font-weight: bold;
-}
-
-#login a:visited {
+#login a , #login a:visited {
     color: blue;
     font-weight: bold;
 }
 
 #login div {
     margin: 5px;
+}
+
+#login p {
+    font-size: 0.9em;
+}
+
+.offset {
+    padding-left: 10px;
+}
+
+#newKonto {
+    padding: 10px 0;
+}
+
+.weiter {
+    background-color: blue;
+    height: 40px;
+    width: auto;
+    padding: 0 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+/* footer on login page */
+.foot-login {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-top: 1%;
+    font-size: 0.8em;
+}
+
+.foot-login a {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
