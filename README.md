@@ -9,3 +9,6 @@ all tasks and homeworks in the WebDevelopment 1 course at smartninja.org
 
 #3 first bootstrap theme
   use a free bootstrap theme and adjust it to your needs
+  
+#4 Hair-Salon
+  build a homepage with bootstrap on your own with a given sketch of the website
